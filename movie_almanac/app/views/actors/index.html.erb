@@ -1,0 +1,8 @@
+<% @actors.each do |actor| %>
+	<h2><%=actor.first_name%> <%=actor.last_name%></h2>
+		<ul>
+		<% actor.movies.each do |movie| %>
+			<li><strong>Title:</strong> <%=movie.title%> <strong>Description: </strong><%=movie.description%> <strong>Year: </strong><%=movie.year%></li>
+		<% end %>
+		</ul>
+<% end %>

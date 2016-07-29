@@ -1,0 +1,7 @@
+<h1><%=@movie.title%>: </h1> 
+<p><%=@movie.description%>, <%=@movie.year%></p>
+<ul>
+	<% @movie.actors.each do |actor|%>
+		<li><h3><%=actor.first_name%> <%=actor.last_name%></h3></li>
+	<%end%>
+</ul>
